@@ -1,4 +1,4 @@
-export const Banner = () => {
+export const Home = () => {
     return (
         <>
         {/* // < !--banner -- > */}
