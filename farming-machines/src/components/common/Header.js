@@ -31,7 +31,7 @@ export const Header = () => {
                                     <a className="nav-link" href="about.html">About</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="products.html">Catalogue </a>
+                                    <a className="nav-link" href="products.html">Catalog </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="blog.html">Blog</a>
