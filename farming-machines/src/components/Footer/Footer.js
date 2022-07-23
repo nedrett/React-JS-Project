@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export const Footer = () => {
     return (
         // <!--  footer -->
@@ -5,24 +7,23 @@ export const Footer = () => {
             <div className="footer">
                 <div className="container">
                     <div className="row">
-                        
+
                         <div className="col-md-3 border_right">
                             <h3>Contacts</h3>
                             <ul className="location_icon">
-                                <li><a href="#"><i className="fa fa-map-marker" aria-hidden="true"></i></a> Locatins</li>
-                                <li><a href="#"><i className="fa fa-volume-control-phone" aria-hidden="true"></i></a> +71 9087654321
+                                <li><i className="fa fa-volume-control-phone" aria-hidden="true"></i>  +359885908746
                                 </li>
-                                <li><a href="#"><i className="fa fa-envelope" aria-hidden="true"></i></a>demo@gmail.com</li>
+                                <li><i className="fa fa-envelope" aria-hidden="true"></i>  nedret88@gmail.com</li>
                             </ul>
                         </div>
                         <div className="col-md-3 border_right">
                             <h3>Menus</h3>
                             <ul className="link">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="products.html">Catalog</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/about">About</Link></li>
+                                <li><Link to="/catalog">Catalog</Link></li>
+                                <li><Link to="/blog">Blog</Link></li>
+                                <li><Link to="/contacts">Contact</Link></li>
                             </ul>
                         </div>
                     </div>

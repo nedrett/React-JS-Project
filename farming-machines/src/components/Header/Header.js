@@ -28,22 +28,19 @@ export const Header = () => {
                                     <Link className="nav-link" to="/"> Home </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="about.html">About</a>
+                                    <Link className="nav-link" to="/about">About</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="products.html">Catalog </a>
+                                    <Link className="nav-link" to="/catalog">Catalog </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="blog.html">Blog</a>
+                                    <Link className="nav-link" to="/blog">Blog</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="contact.html">Contact</a>
+                                    <Link className="nav-link" to="/contacts">Contact</Link>
                                 </li>
                                 <li className="nav-item d_none">
-                                    <a className="nav-link" href="search.html"><i className="fa fa-search" aria-hidden="true"></i></a>
-                                </li>
-                                <li className=" d_none get_btn">
-                                    <a href="quote">Get a quote</a>
+                                    <Link className="nav-link" to="/search"><i className="fa fa-search" aria-hidden="true"></i></Link>
                                 </li>
                             </ul>
                         </div>
