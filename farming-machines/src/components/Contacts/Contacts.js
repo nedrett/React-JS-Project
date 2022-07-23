@@ -1,6 +1,6 @@
 export const Contacts = () => {
     return (
-        <section>
+        <section className="contact">
             <div className="col-md-4">
                 <div className="titlepage">
                     <h2>Contact Us</h2>

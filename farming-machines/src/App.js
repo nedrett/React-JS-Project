@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import { About } from './components/About';
+import { About } from './components/About/About';
 import { Catalog } from './components/Catalog/Catalog';
 import { Home } from './components/Home/Home';
 import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { Loader } from './components/Loader/Loader';
-import { Contacts } from './components/Contacts';
+import { Contacts } from './components/Contacts/Contacts';
 import { Details } from './components/Details';
 import { Login } from './components/Login/Login';
 import { Register } from './components/Register/Register';
