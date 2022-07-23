@@ -24,23 +24,29 @@ export const Header = () => {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarsExample04">
                             <ul className="navbar-nav mr-auto">
-                                <li className="nav-item active">
+                                <li className="home">
                                     <Link className="nav-link" to="/"> Home </Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/about">About</Link>
-                                </li>
-                                <li className="nav-item">
+                                <li className="catalog">
                                     <Link className="nav-link" to="/catalog">Catalog </Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/blog">Blog</Link>
-                                </li>
-                                <li className="nav-item">
+                                <li className="contacts">
                                     <Link className="nav-link" to="/contacts">Contact</Link>
                                 </li>
-                                <li className="nav-item d_none">
+                                <li className="about-nav">
+                                    <Link className="nav-link" to="/about">About</Link>
+                                </li>
+                                <li className="search">
                                     <Link className="nav-link" to="/search"><i className="fa fa-search" aria-hidden="true"></i></Link>
+                                </li>
+                                <li className="login">
+                                    <Link className="nav-link" to="/login">Login</Link>
+                                </li>
+                                <li className="register">
+                                    <Link className="nav-link" to="/register">Register</Link>
+                                </li>
+                                <li className="logout">
+                                    <Link className="nav-link" to="/logout">Logout</Link>
                                 </li>
                             </ul>
                         </div>

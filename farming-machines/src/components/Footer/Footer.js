@@ -20,10 +20,9 @@ export const Footer = () => {
                             <h3>Menus</h3>
                             <ul className="link">
                                 <li><Link to="/">Home</Link></li>
-                                <li><Link to="/about">About</Link></li>
                                 <li><Link to="/catalog">Catalog</Link></li>
-                                <li><Link to="/blog">Blog</Link></li>
                                 <li><Link to="/contacts">Contact</Link></li>
+                                <li><Link to="/about">About</Link></li>
                             </ul>
                         </div>
                     </div>
