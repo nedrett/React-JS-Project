@@ -7,9 +7,10 @@ import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { Loader } from './components/Loader/Loader';
 import { Contacts } from './components/Contacts/Contacts';
-import { Details } from './components/Details';
 import { Login } from './components/Login/Login';
 import { Register } from './components/Register/Register';
+import { OfferCreate } from './components/Offer/Create';
+import { OfferDetails } from './components/Offer/Details';
 
 function App() {
     return (
@@ -21,6 +22,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/catalog" element={<Catalog />} />
+                <Route path="/offer/create" element={<OfferCreate />} />
+                <Route path="/offer/details" element={<OfferDetails />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/login" element={<Login />} />

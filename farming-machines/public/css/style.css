@@ -110,7 +110,7 @@ h4 a,
 h5 a,
 h6 a {
      color: #212121;
-     text-decoration: none!important;
+     text-decoration: none !important;
      opacity: 1
 }
 
@@ -155,7 +155,7 @@ img {
      height: auto;
 }
 
- :focus {
+:focus {
      outline: 0;
 }
 
@@ -1030,130 +1030,223 @@ ul.link li a::after {
      margin-top: 70px;
 }
 
-input.form-control-2, textarea.form-control, input.form-control, textarea:disabled {
-  box-shadow: 0px -2px 20px -1px #f4c537, inset -14px -14px 30px -13px rgb(0 0 0 / 55%);
-  background: white;
-  color: white;
-  border: none;
-  outline: none;
+input.form-control-2,
+textarea.form-control,
+input.form-control,
+textarea:disabled {
+     box-shadow: 0px -2px 20px -1px #f4c537, inset -14px -14px 30px -13px rgb(0 0 0 / 55%);
+     background: white;
+     color: white;
+     border: none;
+     outline: none;
 }
 
 textarea:disabled {
-  width: 100%;
-  resize: none;
+     width: 100%;
+     resize: none;
 }
 
 .form-group p {
-  color: #f8f9fa;
-  text-shadow: 1px 1px #007bff;
-  font-size: 20px;
-  font-style: italic;
+     color: #f8f9fa;
+     text-shadow: 1px 1px #007bff;
+     font-size: 20px;
+     font-style: italic;
 }
 
-.login, .register {
-  width: 40%!important;
+.login,
+.register {
+     width: 40% !important;
 }
 
-.login input, .register input {
-  text-align: center;
+.login input,
+.register input {
+     text-align: center;
 }
 
-.login-page>h1, .register-page>h1, .offer-trip>h1 {
-  margin: 2%;
-  text-align: center;
+.login-page>h1,
+.register-page>h1,
+.offer-page>h1 {
+     margin: 2%;
+     text-align: center;
 }
 
-input.form-control-2::placeholder, textarea.form-control::placeholder {
-  color: rgb(167, 162, 162);
+input.form-control-2::placeholder,
+textarea.form-control::placeholder {
+     color: rgb(167, 162, 162);
 }
 
-textarea.form-control:focus, input.form-control:focus, input.form-control-2:focus {
-  border: 1px solid #80bdff;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  box-shadow: none;
+textarea.form-control:focus,
+input.form-control:focus,
+input.form-control-2:focus {
+     border: 1px solid #80bdff;
+     background: rgba(0, 0, 0, 0.5);
+     color: white;
+     box-shadow: none;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator, input[type="time"]::-webkit-calendar-picker-indicator {
-  cursor: pointer;
-  border-radius: 4px;
-  margin-right: 2px;
-  filter: invert(1);
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+     cursor: pointer;
+     border-radius: 4px;
+     margin-right: 2px;
+     filter: invert(1);
 }
 
-textarea, textarea.form-control, textarea:disabled {
-  padding: 5px 10px;
-  text-align: center;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  word-wrap: break-word;
+textarea,
+textarea.form-control,
+textarea:disabled {
+     padding: 5px 10px;
+     text-align: center;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+     word-wrap: break-word;
 }
 
-textarea, input {
-  background: rgba(0, 0, 0, 0.6);
+textarea,
+input {
+     background: rgba(0, 0, 0, 0.6);
 }
 
 .details .icon {
-  display: block;
-  margin: 25px auto;
-  max-width: 100px;
+     display: block;
+     margin: 25px auto;
+     max-width: 100px;
 }
 
-.icon i, i.buddies {
-  font-size: 4em;
+.icon i,
+i.buddies {
+     font-size: 4em;
 }
 
-div.container .register, div.container .login {
-  margin: 0 auto;
-  width: 50%;
-  text-align: center;
+div.container .register,
+div.container .login {
+     margin: 0 auto;
+     width: 50%;
+     text-align: center;
 }
 
-label, .container>h1 {
-  color: white;
+label,
+.container>h1 {
+     color: white;
 }
 
 div.error {
-  animation: fadeOut 1s forwards;
-  animation-delay: 3s;
-  position: fixed;
-  right: 0;
-  min-width: 350px;
-  margin-top: 55px;
-  margin-right: 20px;
-  display: block;
-  z-index: 11111;
+     animation: fadeOut 1s forwards;
+     animation-delay: 3s;
+     position: fixed;
+     right: 0;
+     min-width: 350px;
+     margin-top: 55px;
+     margin-right: 20px;
+     display: block;
+     z-index: 11111;
 }
 
 div.error p {
-  background: rgba(204, 55, 55, 0.726);
-  color: white;
-  padding: 5px 25px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 20px;
-  position: relative;
-  margin-bottom: 5px;
-  overflow: hidden;
+     background: rgba(204, 55, 55, 0.726);
+     color: white;
+     padding: 5px 25px;
+     text-align: center;
+     text-decoration: none;
+     border-radius: 20px;
+     position: relative;
+     margin-bottom: 5px;
+     overflow: hidden;
 }
 
 .error-page {
-  display: block;
-  margin: 0 auto;
-  max-width: 700px;
+     display: block;
+     margin: 0 auto;
+     max-width: 700px;
 }
 
 .car.logo {
-  transform: rotate(-8deg);
+     transform: rotate(-8deg);
 }
 
 .logo {
-  width: 55px;
-  height: 55px;
+     width: 55px;
+     height: 55px;
 }
 
-.py-5, div.product, div.about, .contact {
-  background-image: url('../images/background.jpg');
-  background-size: 100% 100%;
+.py-5,
+div.product,
+div.about,
+.contact {
+     background-image: url('../images/background.jpg');
+     background-size: 100% 100%;
 }
 
+.edit textarea.form-control,
+.offer-create textarea.form-control {
+     width: 100%;
+     height: 90px;
+}
+
+.edit-label,
+.offer-label {
+     display: flex;
+     justify-content: space-around;
+}
+
+.edit-input,
+.offer-input {
+     display: flex;
+     justify-content: space-between;
+}
+
+#create-page,
+#edit-page {
+     position: relative;
+     margin: auto;
+     width: 800px;
+     height: auto;
+     border-radius: 20px;
+     padding: 40px;
+     box-sizing: border-box;
+     text-align: center;
+     box-shadow: 0px 0px 32px 0px #32485e, -14px -14px 20px #191c21;
+}
+
+input[type="text"] {
+     display: block;
+     margin: 3% auto;
+     background: #ecf0f3;
+     padding: 30px;
+     padding-left: 20px;
+     height: 50px;
+     margin-top: 10px;
+     font-size: 24px;
+     border-radius: 50px;
+     box-shadow: inset 6px 6px 6px #c0c2c5, inset -6px -6px 6px white;
+}
+
+textarea {
+     width: 100%;
+     min-width: 20vw;
+     min-height: 7em;
+     border: 2px solid #86a480;
+     border-radius: 0.7em;
+     font-size: 26px;
+     border-bottom-color: #ecf0f3;
+     background-color: #ecf0f3;
+     border-right-color: #ecf0f3;
+     margin-top: 7px;
+     color: black;
+     box-shadow: inset 6px 6px 6px #c0c2c5, inset -6px -6px 6px white;
+}
+
+.input-title {
+     font-size: 24px;
+}
+
+.create-offer {
+     background-image: url('../images/background.jpg');
+     background-color: #cccccc;
+}
+
+.btn {
+     size: 24px;
+     background-color: rgb(192, 129, 117);
+     color: white;
+ }

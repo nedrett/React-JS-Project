@@ -30,6 +30,9 @@ export const Header = () => {
                                 <li className="catalog">
                                     <Link className="nav-link" to="/catalog">Catalog </Link>
                                 </li>
+                                <li className="offer-create">
+                                    <Link className="nav-link" to="/offer/create">Create Offer </Link>
+                                </li>
                                 <li className="contacts">
                                     <Link className="nav-link" to="/contacts">Contact</Link>
                                 </li>
