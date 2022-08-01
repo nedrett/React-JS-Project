@@ -11,25 +11,20 @@ export const Login = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         const formData = new FormData(e.target)
-        console.log(formData);
 
         const email = formData.get('email');
-        console.log(email);
         const password = formData.get('password');
-        console.log(password);
-
-        // const {
-        //     email,
-        //     password,
-        // } = Object.fromEntries(new FormData(e.target));
 
         authService.login(email, password)
             .then(authData => {
+                if (!authData.email) {
+                    throw new Error(authData.message);
+                }
                 userLogin(authData);
                 navigate('/')
             })
-            .catch(() => {
-                navigate('/404');
+            .catch((e) => {
+                window.alert(e.message);
             })
     };
 

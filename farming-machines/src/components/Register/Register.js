@@ -13,14 +13,10 @@ export const Register = () => {
 
 
         const formData = new FormData(e.target);
-        console.log(formData);
 
         const email = formData.get('email');
-        console.log(email);
         const password = formData.get('password');
-        console.log(password);
         const confirmPassword = formData.get('confirm-password');
-        console.log(confirmPassword);
 
         if (password !== confirmPassword) {
             return window.alert('Password and Repeated Password does not match!');
