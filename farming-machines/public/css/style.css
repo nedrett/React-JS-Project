@@ -318,6 +318,7 @@ ul.btn li:last-child {
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link {
+     display: inline;
      padding: 0px 25px;
      text-transform: uppercase;
      color: #fff;
