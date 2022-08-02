@@ -24,10 +24,17 @@ export const Register = () => {
             // navigate('/register');
         }
 
+        if (!email) {
+            return window.alert('Please fill up Email!');
+        }
+        if (!password) {
+            return window.alert('Please fill up Password!');
+
+        }
+
         authService.register(email, password)
             .then(authData => {
                 userLogin(authData);
-                console.log(authData);
                 navigate('/');
             });
     }

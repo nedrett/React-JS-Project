@@ -13,6 +13,7 @@ import { Logout } from './components/Logout/Logout';
 import { OfferCreate } from './components/Offer/Create';
 import { OfferDetails } from './components/Offer/Details';
 import { AuthProvider } from './contexts/AuthContext';
+import { CombineProvider } from './contexts/CombineContext';
 
 function App() {
     return (
@@ -20,19 +21,21 @@ function App() {
             <div id="box">
                 <Loader />
                 <Header />
-                <main id="main-content">
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/catalog" element={<Catalog />} />
-                        <Route path="/offer/create" element={<OfferCreate />} />
-                        <Route path="/offer/details" element={<OfferDetails />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/contacts" element={<Contacts />} />
-                        <Route path="/login" element={<Login />} />
-                        <Route path="/register" element={<Register />} />
-                        <Route path="/logout" element={<Logout />} />
-                    </Routes>
-                </main>
+                <CombineProvider>
+                    <main id="main-content">
+                        <Routes>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/catalog" element={<Catalog />} />
+                            <Route path="/offer/create" element={<OfferCreate />} />
+                            <Route path="/offer/details" element={<OfferDetails />} />
+                            <Route path="/about" element={<About />} />
+                            <Route path="/contacts" element={<Contacts />} />
+                            <Route path="/login" element={<Login />} />
+                            <Route path="/register" element={<Register />} />
+                            <Route path="/logout" element={<Logout />} />
+                        </Routes>
+                    </main>
+                </CombineProvider>
                 <Footer />
             </div>
         </AuthProvider>
