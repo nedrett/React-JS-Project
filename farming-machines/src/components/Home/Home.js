@@ -7,6 +7,8 @@ import { LatestOffers } from "./LatestOffers/LatestOffers";
 export const Home = () => {
     const { combines } = useContext(CombineContext);
 
+    const latest = combines.slice(combines.length - 3).reverse();
+
     return (
         <>
             {/* // < !--banner -- > */}
@@ -28,8 +30,8 @@ export const Home = () => {
                     <h1>Latest Offers</h1>
                     <div className="container">
                         <div className="row">
-                            {combines.length > 0
-                                ? combines.map(x => <LatestOffers key={x._id} combine={x} />)
+                            {latest.length > 0
+                                ? latest.map(x => <LatestOffers key={x._id} combine={x} />)
                                 : <p className="no-offers">No Offers Yet</p>
                             }
                         </div>

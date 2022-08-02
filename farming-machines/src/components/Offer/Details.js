@@ -2,16 +2,19 @@ import { useContext } from "react";
 import { useParams, Link, useNavigate } from 'react-router-dom';
 
 import { CombineContext } from '../../contexts/CombineContext';
+import { AuthContext } from '../../contexts/AuthContext';
 
 import * as combineService from '../../services/combineService';
 
 export const OfferDetails = () => {
     const { selectCombine } = useContext(CombineContext);
+    const { user } = useContext(AuthContext);
     const { combineId } = useParams();
     const navigate = useNavigate();
 
     const currentCombine = selectCombine(combineId);
 
+    const isOwner = user?._id === currentCombine._ownerId;
 
     return (
         <main>
@@ -25,20 +28,21 @@ export const OfferDetails = () => {
                         <p className="model">Model: {currentCombine.model}</p>
                         <p className="width">Header Width: {currentCombine.width}</p>
                     </div>
-                    <p className="text"> 
-                    <h3>Description:</h3> 
+                    <p className="text">
+                        <h3>Description:</h3>
                         {currentCombine.summary}
                     </p>
 
-                    {/* Edit/Delete buttons ( Only for creator of this game )  */}
-                    <div className="buttons">
-                        <Link to={`/offer/${combineId}/edit`} className="button">
-                            Edit
-                        </Link>
-                        <Link to="/offer/delete" className="button">
-                            Delete
-                        </Link>
-                    </div>
+                    {isOwner &&
+                        <div className="buttons">
+                            <Link to={`/offer/${combineId}/edit`} className="button">
+                                Edit
+                            </Link>
+                            <Link to="/offer/delete" className="button">
+                                Delete
+                            </Link>
+                        </div>
+                    }
                 </div>
             </section>
         </main>

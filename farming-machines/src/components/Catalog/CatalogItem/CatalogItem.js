@@ -10,9 +10,6 @@ export const CatalogItem = ({ combine }) => {
                 <Link to={`/offer/${combine._id}`} className="details-btn">
                     Details
                 </Link>
-                <Link to={`/offer/${combine._id}/edit`} className="details-btn">
-                    Edit
-                </Link>
             </div>
         </div>
     )
