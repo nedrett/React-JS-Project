@@ -7,7 +7,7 @@ import { AuthContext } from '../../contexts/AuthContext';
 import * as combineService from '../../services/combineService';
 
 export const OfferDetails = () => {
-    const { selectCombine } = useContext(CombineContext);
+    const { selectCombine, combineRemove } = useContext(CombineContext);
     const { user } = useContext(AuthContext);
     const { combineId } = useParams();
     const navigate = useNavigate();
@@ -15,6 +15,18 @@ export const OfferDetails = () => {
     const currentCombine = selectCombine(combineId);
 
     const isOwner = user?._id === currentCombine._ownerId;
+
+    const deleteHandler = () => {
+        const confirm = window.confirm('Are you sure you want to delete this Offer?');
+
+        if (confirm) {
+            combineService.remove(combineId)
+                .then(() => {
+                    combineRemove(combineId);
+                    navigate('/catalog');
+                })
+        }
+    }
 
     return (
         <main>
@@ -38,9 +50,9 @@ export const OfferDetails = () => {
                             <Link to={`/offer/${combineId}/edit`} className="button">
                                 Edit
                             </Link>
-                            <Link to="/offer/delete" className="button">
+                            <button onClick={deleteHandler} className="button">
                                 Delete
-                            </Link>
+                            </button>
                         </div>
                     }
                 </div>

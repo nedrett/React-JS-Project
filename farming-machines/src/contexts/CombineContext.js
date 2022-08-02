@@ -39,12 +39,17 @@ export const CombineProvider = ({
         setCombine(state => state.map(x => x._id === combineId ? combineData : x));
     };
 
+    const combineRemove = (combineId) => {
+        setCombine(state => state.filter(x => x._id !== combineId));
+    };
+
     return (
         <CombineContext.Provider value={{
             combines,
             combineAdd,
             combineEdit,
             selectCombine,
+            combineRemove,
         }}>
             {children}
         </CombineContext.Provider>
