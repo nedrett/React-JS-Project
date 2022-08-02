@@ -19,6 +19,7 @@ export const CombineProvider = ({
             .catch(err => {
                 window.alert(err);
             });
+
     }, []);
 
     const combineAdd = (combineData) => {
@@ -30,15 +31,20 @@ export const CombineProvider = ({
         navigate('/catalog');
     };
 
+    const selectCombine = (combineId) => {
+        return combines.find(x => x._id === combineId) || {};
+    };
+
     const combineEdit = (combineId, combineData) => {
         setCombine(state => state.map(x => x._id === combineId ? combineData : x));
-    }
+    };
 
     return (
         <CombineContext.Provider value={{
             combines,
             combineAdd,
             combineEdit,
+            selectCombine,
         }}>
             {children}
         </CombineContext.Provider>
