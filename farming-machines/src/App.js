@@ -16,6 +16,7 @@ import { OfferDetails } from './components/Offer/Details';
 import { OfferEdit } from './components/Offer/Edit';
 import { AuthProvider } from './contexts/AuthContext';
 import { CombineProvider } from './contexts/CombineContext';
+import { PrivateRoute } from './components/PrivateRoute/PrivateRoute';
 
 function App() {
     return (
@@ -28,15 +29,17 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Home />} />
                             <Route path="/catalog" element={<Catalog />} />
-                            <Route path="/offer/create" element={<OfferCreate />} />
                             <Route path="/offer/:combineId" element={<OfferDetails />} />
-                            <Route path="/offer/:combineId/edit" element={<OfferEdit />} />
                             <Route path="/about" element={<About />} />
                             <Route path="/contacts" element={<Contacts />} />
                             <Route path="/search" element={<Search />} />
                             <Route path="/login" element={<Login />} />
                             <Route path="/register" element={<Register />} />
-                            <Route path="/logout" element={<Logout />} />
+                            <Route element={<PrivateRoute />}>
+                                <Route path="/offer/create" element={<OfferCreate />} />
+                                <Route path="/offer/:combineId/edit" element={<OfferEdit />} />
+                                <Route path="/logout" element={<Logout />} />
+                            </Route>
                         </Routes>
                     </main>
                 </CombineProvider>
