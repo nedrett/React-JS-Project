@@ -1,4 +1,19 @@
+import emailjs from 'emailjs-com';
+
 export const Contacts = () => {
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_7kgcf0c', 'template_kz0rzvv', e.target, 'xV48AsiZpaa2xPDdk')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset();
+      };
+
     return (
         <section className="contact">
             <div className="col-md-4">
@@ -7,7 +22,7 @@ export const Contacts = () => {
                 </div>
             </div>
             <div className="col-md-12">
-                <form id="request" className="main_form">
+                <form id="request" className="main_form" onSubmit={sendEmail}>
                     <div className="row">
                         <div className="col-md-3 ">
                             <input className="contactus" placeholder="Full Name" type="text" name="name" />
