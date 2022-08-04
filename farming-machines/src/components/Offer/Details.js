@@ -45,16 +45,22 @@ export const OfferDetails = () => {
                         {currentCombine.summary}
                     </p>
 
-                    {isOwner &&
-                        <div className="buttons">
-                            <Link to={`/offer/${combineId}/edit`} className="button">
-                                Edit
-                            </Link>
-                            <button onClick={deleteHandler} className="button">
-                                Delete
-                            </button>
-                        </div>
-                    }
+
+                    <div className="buttons">
+                        {isOwner &&
+                            <>
+                                <Link to={`/offer/${combineId}/edit`} className="button">
+                                    Edit
+                                </Link>
+                                <button onClick={deleteHandler} className="button">
+                                    Delete
+                                </button>
+                            </>
+                        }
+                        <button onClick={() => navigate(-1)} className="button">
+                            Back
+                        </button>
+                    </div>
                 </div>
             </section>
         </main>
