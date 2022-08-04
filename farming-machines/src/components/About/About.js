@@ -1,83 +1,30 @@
 export const About = () => {
-    return (
-        // <!-- about -->
+   return (
+      // <!-- about -->
       <div className="about">
          <div className="container">
             <div className="row">
                <div className="col-md-12">
                   <div className="titlepage">
                      <h2>About Our Company</h2>
-                     
+
                   </div>
                </div>
             </div>
             <div className="row">
                <div className="col-md-12">
-                  <div id="myCarousel" className="carousel slide about_Carousel " data-ride="carousel">
-                     <ol className="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                     </ol>
-                     <div className="carousel-inner">
-                        <div className="carousel-item active">
-                           <div className="container">
-                              <div className="carousel-caption ">
-                                 <div className="row">
-                                    <div className="col-md-12">
-                                       <div className="test_box">
-                                          <i><img src="images/tes1.png" alt="#"/></i>
-                                          <h4>jhone Du</h4>
-                                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div className="carousel-item">
-                           <div className="container">
-                              <div className="carousel-caption">
-                                 <div className="row">
-                                    <div className="col-md-12">
-                                       <div className="test_box">
-                                          <i><img src="images/tes1.png" alt="#"/></i>
-                                          <h4>jhone Du</h4>
-                                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div className="carousel-item">
-                           <div className="container">
-                              <div className="carousel-caption">
-                                 <div className="row">
-                                    <div className="col-md-12">
-                                       <div className="test_box">
-                                          <i><img src="images/tes1.png" alt="#"/></i>
-                                          <h4>jhone Du</h4>
-                                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
+                  <div className="row">
+                     <div className="col-md-12">
+                        <div className="test_box">
+                           <i><img src="images/logoBig.png" alt="img" /></i>
+                           <h4>Ned farming Company CO.</h4>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et molestie lectus. Integer accumsan purus mollis, finibus lacus ut, lacinia dui. Curabitur nibh purus, tincidunt eget venenatis quis, ultrices eu dui. Nulla sed eros erat. Nam quis scelerisque dui. Morbi sagittis arcu ut purus convallis feugiat. Suspendisse sodales luctus vestibulum. Nullam suscipit elementum turpis, tempor varius magna tempor quis. Quisque vitae pellentesque lectus. Nulla luctus tempor tincidunt. Curabitur dui sem, pellentesque vitae consequat non, condimentum quis lectus. Nunc mauris ex, sodales eget ipsum non, pulvinar sodales lacus. Curabitur ut quam eget enim molestie semper. Vestibulum lobortis quam sed turpis vulputate feugiat.</p>
                         </div>
                      </div>
-                     <a className="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span className="sr-only">Previous</span>
-                     </a>
-                     <a className="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span className="sr-only">Next</span>
-                     </a>
                   </div>
                </div>
             </div>
          </div>
       </div>
-    );
+   );
 }

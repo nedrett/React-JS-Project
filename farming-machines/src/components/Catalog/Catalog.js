@@ -6,6 +6,7 @@ import { CatalogItem } from "./CatalogItem/CatalogItem";
 
 export const Catalog = () => {
    const { combines } = useContext(CombineContext);
+   console.log(combines);
    return (
       // <!-- product  section -->
       <div className="product">
@@ -21,7 +22,7 @@ export const Catalog = () => {
          <div className="container-fluid">
             <div className="row">
                {combines.length > 0
-                  ? combines.map( combine => <CatalogItem key={combine._id} combine={combine} />)
+                  ? combines.map(combine => <CatalogItem key={combine._id} combine={combine} />)
                   : <h3 className="no-offers">No Offers Yet</h3>
                }
 

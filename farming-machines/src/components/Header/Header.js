@@ -45,9 +45,6 @@ export const Header = () => {
                                                 <Link className="nav-link" to="/register">Register</Link>
                                             </div>
                                         }
-                                        <Link className="nav-link" to="/contacts">Contact</Link>
-                                        <Link className="nav-link" to="/about">About</Link>
-
                                     </ul>
                                 </div>
                             </nav>

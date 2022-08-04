@@ -733,7 +733,7 @@ ul.btn li:last-child {
      min-height: 367px;
 }
 
-.about_Carousel .test_box h4 {
+.test_box h4 {
      font-size: 30px;
      color: #1d1c1c;
      line-height: 18px;
@@ -742,7 +742,7 @@ ul.btn li:last-child {
      text-transform: uppercase;
      font-weight: 600;
      padding: 23px 0px 0px 0px;
-     text-align: left;
+     text-align: center;
 }
 
 .about_Carousel .test_box i {
@@ -755,7 +755,7 @@ ul.btn li:last-child {
      border-radius: 122px;
 }
 
-.about_Carousel .test_box p {
+.test_box p {
      font-size: 17px;
      line-height: 28px;
      color: #fff;
@@ -1330,7 +1330,8 @@ textarea {
      padding: 7px;
 }
 
-.model, .width {
+.model,
+.width {
      display: block;
      color: #555;
      font-size: 30px;
@@ -1361,7 +1362,8 @@ textarea {
      height: 50%;
 }
 
-.text h3, .text{
+.text h3,
+.text {
      font-size: 25px;
      color: #545454;
 }
@@ -1387,3 +1389,43 @@ textarea {
      background-color: #6f5d9c;
      color: white;
 }
+
+/** search page**/
+
+body {
+     background-image: url('../images/background.jpg');
+     height: 100vh;
+     justify-content: center;
+     align-items: center
+ }
+ 
+ .search {
+     margin: auto;
+     width: 50%;
+     padding: 4px;
+     border-radius: 5px;
+     align-items: center;
+ }
+ 
+.search-input {
+     position: relative;
+     width: 100%;
+     background: #eee;
+     display: inline;
+}
+
+ ::placeholder {
+     color: black;
+     opacity: 1
+ }
+
+ .search-results {
+     width: 100%;
+     min-height: 400px;
+ }
+
+ .no-results {
+     color: white;
+     font-size:24px;
+     text-align: center;
+ }
