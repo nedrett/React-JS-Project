@@ -6,8 +6,17 @@ import { LatestOffers } from "./LatestOffers/LatestOffers";
 
 export const Home = () => {
     const { combines } = useContext(CombineContext);
+    let latest = [];
+    let index;
 
-    const latest = combines.slice(combines.length - 3).reverse();
+    if (combines.length > 0) {
+        if (combines.length - 3 < 0) {
+            index = 0;
+        } else {
+            index = combines.length - 3;
+        }
+        latest = combines.slice(index).reverse();
+    }
 
     return (
         <>
