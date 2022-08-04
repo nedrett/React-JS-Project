@@ -1390,6 +1390,9 @@ textarea {
      color: white;
 }
 
+.buy-btn {
+     text-align:left;
+}
 /** search page**/
 
 body {

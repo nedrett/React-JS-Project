@@ -35,8 +35,8 @@ export const Contacts = () => {
                         </div>
                         <div className="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                             <ul className="social_icon">
-                                <li><a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i className="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.facebook.com/nedret.rasim.5"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/nedret-rasim-4861a5228/"><i className="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                         <div className="col-md-8">
