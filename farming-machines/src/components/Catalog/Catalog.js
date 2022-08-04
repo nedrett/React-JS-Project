@@ -6,7 +6,6 @@ import { CatalogItem } from "./CatalogItem/CatalogItem";
 
 export const Catalog = () => {
    const { combines } = useContext(CombineContext);
-   console.log(combines);
    return (
       // <!-- product  section -->
       <div className="product">

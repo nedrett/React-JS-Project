@@ -11,6 +11,14 @@ export const OfferCreate = () => {
 
         const combineData = Object.fromEntries(new FormData(e.target));
 
+        const valuesArray = Object.values(combineData);
+
+        for (const value of valuesArray) { 
+            if (value === '') {
+                return window.alert('Please fill in all the Information!');
+            }
+        }
+
         combineService.create(combineData)
             .then(result => {
                 combineAdd(result);
