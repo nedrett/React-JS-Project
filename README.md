@@ -1,2 +1,4 @@
-# React JS Project
- Project made for React JS Course in SoftUni
+# How to start the app and server
+    For the Application i have used the SoftUni Practice Server. Server.js file is located in the main directory and there are two ways to start it: First is right click in the folder and open terminal or power shell, write command "node .\server.js"; Second is open folder in VS Code and in main directory you can use "node .\server.js" or "npm start". Server will start on port 3030. To start the app use the same VS Code, open new integrated terminal and go one folder in with "cd .\farming-machines\". Then you have to install the addittional libraries write "npm install" and it will install all the needed libraries. Now is time to start the app, write command "npm start" and it will start my ReactJS project about farming machinery, more specifically combines(harvester).
+
+# How my app works
