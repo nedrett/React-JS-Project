@@ -16,8 +16,6 @@ export const OfferDetails = () => {
 
     const isOwner = user?._id === currentCombine._ownerId;
 
-    console.log(isAuthenticated);
-
     const deleteHandler = () => {
         const confirm = window.confirm('Are you sure you want to delete this Offer?');
 
@@ -42,10 +40,10 @@ export const OfferDetails = () => {
                         <p className="model">Model: {currentCombine.model}</p>
                         <p className="width">Header Width: {currentCombine.width}</p>
                     </div>
-                    <p className="text">
+                    <div className="text">
                         <h3>Description:</h3>
                         {currentCombine.summary}
-                    </p>
+                    </div>
 
 
                     <div className="buttons">
