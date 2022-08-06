@@ -31,7 +31,7 @@ export const Footer = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12">
-                                <p>Copyright 2019 All Right Reserved By <a href="https://github.com/nedrett"> Nedret</a>
+                                <p>Copyright &copy; All Right Reserved By <a href="https://github.com/nedrett"> Nedret</a>
                                 </p>
                             </div>
                         </div>
