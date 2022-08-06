@@ -1043,6 +1043,7 @@ textarea:disabled {
 .login,
 .register {
      width: 40% !important;
+     min-height: 500px;
 }
 
 .login input,
@@ -1424,7 +1425,7 @@ body {
 
  .search-results {
      width: 100%;
-     min-height: 400px;
+     min-height: 550px;
  }
 
  .no-results {

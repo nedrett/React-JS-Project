@@ -16,7 +16,8 @@ import { OfferDetails } from './components/Offer/Details';
 import { OfferEdit } from './components/Offer/Edit';
 import { AuthProvider } from './contexts/AuthContext';
 import { CombineProvider } from './contexts/CombineContext';
-import { PrivateRoute } from './components/PrivateRoute/PrivateRoute';
+import { PrivateRoute } from './components/common/PrivateRoute';
+import { CombineOwner } from './components/common/CombineOwner';
 
 function App() {
     return (
@@ -35,9 +36,11 @@ function App() {
                             <Route path="/search" element={<Search />} />
                             <Route path="/login" element={<Login />} />
                             <Route path="/register" element={<Register />} />
+                            <Route element={<CombineOwner />}>
+                                <Route path="/offer/:combineId/edit" element={<OfferEdit />} />
+                            </Route>
                             <Route element={<PrivateRoute />}>
                                 <Route path="/offer/create" element={<OfferCreate />} />
-                                <Route path="/offer/:combineId/edit" element={<OfferEdit />} />
                                 <Route path="/logout" element={<Logout />} />
                             </Route>
                         </Routes>
