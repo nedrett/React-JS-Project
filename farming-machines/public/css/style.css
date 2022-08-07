@@ -397,12 +397,13 @@ ul.btn li:last-child {
 .banner_main {
      background: url(../images/banner.jpg);
      background-repeat: no-repeat;
-     min-height: 840px;
+     min-height: 500px;
      background-size: 100% 100%;
      display: flex;
      justify-content: center;
      align-content: center;
      align-items: center;
+     margin-bottom: 40px;
 }
 
 .text-bg {
@@ -458,7 +459,7 @@ ul.btn li:last-child {
 
 .titlepage h2 {
      font-size: 50px;
-     color: #090807;
+     color: white;
      line-height: 62px;
      font-weight: bold;
      padding: 0;
@@ -500,6 +501,9 @@ ul.btn li:last-child {
 
 .three_box {
      margin-top: -160px;
+}
+.three_box h1 {
+     color: #ec4141;
 }
 
 .box_text {
