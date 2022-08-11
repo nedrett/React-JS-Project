@@ -19,7 +19,7 @@ export const OfferCreate = () => {
             }
         }
 
-        combineService.create(combineData)
+        combineService.create({...combineData, offers: []})
             .then(result => {
                 combineAdd(result);
             })
