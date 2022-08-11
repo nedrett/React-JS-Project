@@ -41,7 +41,7 @@ export const Contacts = () => {
                         </div>
                         <div className="col-md-8">
                             <textarea className="contactus1" placeholder="Message" type="text"
-                                Message="Name" name="message">Message </textarea>
+                                name="message"></textarea>
                         </div>
                         <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                             <button className="send_btn">Send</button>

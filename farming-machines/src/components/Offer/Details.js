@@ -44,33 +44,35 @@ export const OfferDetails = () => {
                         <h3>Description:</h3>
                         {currentCombine.summary}
                     </div>
+                    <>
+                        <div className="buttons">
+                            {isAuthenticated &&
+                                <>
+                                    {isOwner
+                                        ? <>
+                                            < Link to={`/offer/${combineId}/edit`} className="button">
+                                                Edit
+                                            </Link>
+                                            <button onClick={deleteHandler} className="button">
+                                                Delete
+                                            </button>
+                                        </>
+                                        :
+                                        <Link to={`/contacts`} className="button buy-btn">
+                                            Buy
+                                        </Link>
 
+                                    }
+                                </>
+                            }
 
-                    <div className="buttons">
-                        {isAuthenticated && !isOwner &&
-                            <div className="buy-btn">
-                                <Link to={`/contacts`} className="button buy-btn">
-                                    Buy
-                                </Link>
-                            </div>
-                        }
-                        {isOwner &&
-                            <>
-
-                                <Link to={`/offer/${combineId}/edit`} className="button">
-                                    Edit
-                                </Link>
-                                <button onClick={deleteHandler} className="button">
-                                    Delete
-                                </button>
-                            </>
-                        }
-                        <button onClick={() => navigate(-1)} className="button">
-                            Back
-                        </button>
-                    </div>
+                            <button onClick={() => navigate(-1)} className="button">
+                                Back
+                            </button>
+                        </div>
+                    </>
                 </div>
-            </section>
-        </main>
+            </section >
+        </main >
     );
 }

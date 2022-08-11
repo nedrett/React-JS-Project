@@ -37,7 +37,7 @@ html {
 }
 
 body {
-     color: #666666;
+     color: white;
      font-size: 14px;
      font-family: 'Lato', sans-serif;
      line-height: 1.80857;
@@ -502,6 +502,7 @@ ul.btn li:last-child {
 .three_box {
      margin-top: -160px;
 }
+
 .three_box h1 {
      color: #ec4141;
 }
@@ -1122,40 +1123,6 @@ label,
      color: white;
 }
 
-div.error {
-     animation: fadeOut 1s forwards;
-     animation-delay: 3s;
-     position: fixed;
-     right: 0;
-     min-width: 350px;
-     margin-top: 55px;
-     margin-right: 20px;
-     display: block;
-     z-index: 11111;
-}
-
-div.error p {
-     background: rgba(204, 55, 55, 0.726);
-     color: white;
-     padding: 5px 25px;
-     text-align: center;
-     text-decoration: none;
-     border-radius: 20px;
-     position: relative;
-     margin-bottom: 5px;
-     overflow: hidden;
-}
-
-.error-page {
-     display: block;
-     margin: 0 auto;
-     max-width: 700px;
-}
-
-.car.logo {
-     transform: rotate(-8deg);
-}
-
 .logo {
      width: 55px;
      height: 55px;
@@ -1286,6 +1253,7 @@ textarea {
      overflow: hidden;
      border-radius: 10px;
      transition: all 0.4s;
+     box-shadow: 0px 0px 32px 0px , -14px -14px 20px #191c21;
 }
 
 #offer-details>h1 {
@@ -1305,7 +1273,6 @@ textarea {
      background-blend-mode: multiply;
      z-index: 2;
      border-radius: 10px;
-     background-color: whitesmoke;
 }
 
 .offer-header {
@@ -1315,14 +1282,14 @@ textarea {
 }
 
 .offer_header>h1 {
-     color: black;
+     color: #f0cece;
      margin-top: 5px;
      font-size: 36px;
      font-weight: 400;
 }
 
 .offer_header>h4 {
-     color: #555;
+     color: #f0cece;
      font-size: 23px;
      font-weight: 400;
 }
@@ -1331,14 +1298,14 @@ textarea {
      display: block;
      font-size: 40px;
      margin-top: 15px;
-     color: #555;
+     color: #f0cece;
      padding: 7px;
 }
 
 .model,
 .width {
      display: block;
-     color: #555;
+     color: #f0cece;
      font-size: 30px;
      margin-left: 10px;
      margin-bottom: 20px;
@@ -1346,12 +1313,12 @@ textarea {
 }
 
 .offer-img {
-     position: relative;
-     float: left;
-     margin-left: 15px;
-     margin-right: 22px;
-     height: 220px;
-     border-radius: 50%;
+     display: block;
+     position: center;
+     float: center;
+     margin-left: auto;
+     margin-right: auto;
+     height: 300px;
      box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
 }
 
@@ -1370,19 +1337,19 @@ textarea {
 .text h3,
 .text {
      font-size: 25px;
-     color: #545454;
+     color: #f0cece;
 }
 
 .buttons {
      height: 10%;
-     text-align: right;
+     text-align: center;
      padding-right: 15px;
      padding-bottom: 40px;
 }
 
 .button {
      height: 15%;
-     background-color: #54557b;
+     background-color: #fd5454;
      padding: 14px;
      margin-top: auto;
      margin-left: 10px;
@@ -1391,13 +1358,14 @@ textarea {
 }
 
 .button:hover {
-     background-color: #6f5d9c;
+     background-color: #e02fb4;
      color: white;
 }
 
 .buy-btn {
-     text-align:left;
+     text-align: right;
 }
+
 /** search page**/
 
 body {
@@ -1405,16 +1373,16 @@ body {
      height: 100vh;
      justify-content: center;
      align-items: center
- }
- 
- .search {
+}
+
+.search {
      margin: auto;
      width: 50%;
      padding: 4px;
      border-radius: 5px;
      align-items: center;
- }
- 
+}
+
 .search-input {
      position: relative;
      width: 100%;
@@ -1422,18 +1390,18 @@ body {
      display: inline;
 }
 
- ::placeholder {
+::placeholder {
      color: black;
      opacity: 1
- }
+}
 
- .search-results {
+.search-results {
      width: 100%;
      min-height: 550px;
- }
+}
 
- .no-results {
+.no-results {
      color: white;
-     font-size:24px;
+     font-size: 24px;
      text-align: center;
- }
+}
