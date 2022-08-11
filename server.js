@@ -1345,8 +1345,7 @@
                 "width": "6.00",
                 "imageUrl": "https://tractor.bg/media/2020/04/22/516610/710x710.jpg",
                 "summary": "The best combine",
-                "_createdOn": 1659431018530,
-		    "offers": []
+                "_createdOn": 1659431018530
             },
             "bd293143-80d5-4683-b5f2-73ca4f56b873": {
                 "_ownerId": "ebb30e21-27c2-4685-b22e-84534d49a235",
@@ -1355,8 +1354,7 @@
                 "width": "6.10",
                 "imageUrl": "https://i.ytimg.com/vi/4HDwdXpZyhM/sddefault.jpg",
                 "summary": "Second Best Combine",
-                "_createdOn": 1659431208262,
-		    "offers": []
+                "_createdOn": 1659431208262
             },
             "adcbc5d2-7e44-4864-ae62-99c70492679d": {
                 "_ownerId": "ebb30e21-27c2-4685-b22e-84534d49a235",
@@ -1365,8 +1363,15 @@
                 "width": "5.40",
                 "imageUrl": "https://www.lectura-specs.com/models/renamed/orig/combine-harvester-lexion-6700-claas.jpg",
                 "summary": "One of the Best Lexions",
-                "_createdOn": 1659445359754,
-		    "offers": []
+                "_createdOn": 1659445359754
+            }
+        },
+        offers: {
+            "6c7a5309-2996-4043-8f8c-630271a2ac89": {
+                "_ownerId": "26a75244-597f-4462-86c9-05a6a7771bb1",
+                "offerId": "f60747c2-3f17-4135-8aa1-42579e887784",
+                "buyerId": "ebed7b46-a2d8-4d2f-8310-1548f44ac803",
+                "_createdOn": 1660248993223
             }
         }
     };

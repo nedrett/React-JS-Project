@@ -18,6 +18,7 @@ import { AuthProvider } from './contexts/AuthContext';
 import { CombineProvider } from './contexts/CombineContext';
 import { PrivateRoute } from './components/common/PrivateRoute';
 import { CombineOwner } from './components/common/CombineOwner';
+import { BuyOfferProvider } from './contexts/BuyOfferContext';
 
 function App() {
     return (
@@ -27,23 +28,25 @@ function App() {
                 <Header />
                 <CombineProvider>
                     <main id="main-content">
-                        <Routes>
-                            <Route path="/" element={<Home />} />
-                            <Route path="/catalog" element={<Catalog />} />
-                            <Route path="/offer/:combineId" element={<OfferDetails />} />
-                            <Route path="/about" element={<About />} />
-                            <Route path="/contacts" element={<Contacts />} />
-                            <Route path="/search" element={<Search />} />
-                            <Route path="/login" element={<Login />} />
-                            <Route path="/register" element={<Register />} />
-                            <Route element={<CombineOwner />}>
-                                <Route path="/offer/:combineId/edit" element={<OfferEdit />} />
-                            </Route>
-                            <Route element={<PrivateRoute />}>
-                                <Route path="/offer/create" element={<OfferCreate />} />
-                                <Route path="/logout" element={<Logout />} />
-                            </Route>
-                        </Routes>
+                        <BuyOfferProvider>
+                            <Routes>
+                                <Route path="/" element={<Home />} />
+                                <Route path="/catalog" element={<Catalog />} />
+                                <Route path="/about" element={<About />} />
+                                <Route path="/contacts" element={<Contacts />} />
+                                <Route path="/search" element={<Search />} />
+                                <Route path="/login" element={<Login />} />
+                                <Route path="/register" element={<Register />} />
+                                <Route path="/offer/:combineId" element={<OfferDetails />} />
+                                <Route element={<CombineOwner />}>
+                                    <Route path="/offer/:combineId/edit" element={<OfferEdit />} />
+                                </Route>
+                                <Route element={<PrivateRoute />}>
+                                    <Route path="/offer/create" element={<OfferCreate />} />
+                                    <Route path="/logout" element={<Logout />} />
+                                </Route>
+                            </Routes>
+                        </BuyOfferProvider>
                     </main>
                 </CombineProvider>
                 <Footer />
