@@ -8,10 +8,10 @@
     1. Login Page (/login) - Registered users can sign-in. Available for guest;
     2. Register Page (/register) - Register a new user. Available for guest;
     3. Logout (/logout) - Sign-out user. Only Logged in users can access;
-    4. Home Page (/) - Applications' start page, last three added offers are rendered dinamically in Latest Offers section with details button under. Available for guest and users;
-    5. Catalog Page (/catalog) - All of the available offers are displayed with details button under. Available for guest but and users;
+    4. Home Page (/) - Applications' start page, last three offers are rendered dinamically in Latest Offers section with details button under. Available for guest and users;
+    5. Catalog Page (/catalog) - All of the available offers are displayed with details button under. Available for guest and users;
     6. Create Offer Page (/offer/create) - Only Logged in users can create offer;
-    7. Details Page (/offer/:offerId) - Available for Logged in and Guest. Guests can see only detailed info about the offer, no any buttons available. If the user is the owner two butttons appear - Edit and Delete. Edit button redirects to Edit Page and Delete button deletes the offer. If user is not owner Buy button appears, in case user want to buy the item it redirects to the Contact Page;
+    7. Details Page (/offer/:offerId) - Available for Logged in and Guest. Guests can see only detailed info about the offer, no any buttons available. If the user is the owner two butttons appear - Edit and Delete. Edit button redirects to Edit Page and Delete button deletes the offer. If user is not owner Buy button appears, in case user want to buy the item it redirects to the Contact Page and shows message that user have sent buy request;
     8. Edit Page (/offer/:offerId/edit) - The owner of the offer can Edit it. After Edit button is pressed it redirect to Details page of the same offer;
     9. Search Page (/search) - Searches by model match (partial or full) and it is case insensitive.
     10. Contact Us Page (/contacts) - Sends e-mail to my personal mail adress via EmailJS library;

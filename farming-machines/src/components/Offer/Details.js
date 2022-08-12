@@ -30,20 +30,23 @@ export const OfferDetails = () => {
     }
 
     const onBuyClick = () => {
+        const confirm = window.confirm('Are you sure want to Buy this Offer?');
 
-        buyOfferService.create({ offerId: currentCombine._id, _ownerId: currentCombine._ownerId, buyerId: user._id })
-            .then(result => {
-                offerAdd(result)
-            })
-            .catch(err => {
-                window.alert(err);
-            });
+        if (confirm) {
+            buyOfferService.create({ offerId: currentCombine._id, _ownerId: currentCombine._ownerId, buyerId: user._id })
+                .then(result => {
+                    offerAdd(result)
+                })
+                .catch(err => {
+                    window.alert(err);
+                });
 
-        navigate('/contacts');
+            navigate('/contacts');
+        }
     }
 
     const deleteHandler = () => {
-        const confirm = window.confirm('Are you sure you want to delete this Offer?');
+        const confirm = window.confirm('Are you sure want to delete this Offer?');
 
         if (confirm) {
             combineService.remove(combineId)
