@@ -15,7 +15,7 @@ export const OfferCreate = () => {
 
         for (const value of valuesArray) { 
             if (value === '') {
-                return window.alert('Please fill in all the Information!');
+                return window.alert('Please fill in all the Fields!');
             }
         }
 

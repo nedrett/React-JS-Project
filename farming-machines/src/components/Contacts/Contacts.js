@@ -4,6 +4,16 @@ export const Contacts = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        const emailData = Object.fromEntries(new FormData(e.target));
+
+        const valuesArray = Object.values(emailData);
+
+        for (const value of valuesArray) { 
+            if (value === '') {
+                return window.alert('Please fill in all the Fields!');
+            }
+        }
     
         emailjs.sendForm('service_7kgcf0c', 'template_kz0rzvv', e.target, 'xV48AsiZpaa2xPDdk')
           .then((result) => {

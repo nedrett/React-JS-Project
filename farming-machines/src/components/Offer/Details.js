@@ -19,7 +19,7 @@ export const OfferDetails = () => {
 
     const isOwner = user?._id === currentCombine._ownerId;
 
-    const filteredOffers = offers.filter(x => currentCombine._id === x.offerId);
+    const filteredOffers = offers ? offers.filter(x => currentCombine._id === x.offerId) : [];
 
     let offerBoughtByUser = false;
 
@@ -30,6 +30,7 @@ export const OfferDetails = () => {
     }
 
     const onBuyClick = () => {
+
         const confirm = window.confirm('Are you sure want to Buy this Offer?');
 
         if (confirm) {
