@@ -36,7 +36,7 @@ export const Search = () => {
             </div>
             <div id="search-results" className="search-results">
                 {combines.length > 0
-                    ? combines.map(combine => <SearchItem combine={combine}/>)
+                    ? combines.map(combine => <SearchItem key={combine._id} combine={combine}/>)
                     : <p className="no-results">No results found!</p>
                 }
             </div>
