@@ -1,6 +1,8 @@
+import { useNavigate } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 
 export const Contacts = () => {
+    const navigate = useNavigate();
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -9,20 +11,22 @@ export const Contacts = () => {
 
         const valuesArray = Object.values(emailData);
 
-        for (const value of valuesArray) { 
+        for (const value of valuesArray) {
             if (value === '') {
                 return window.alert('Please fill in all the Fields!');
             }
         }
-    
+
         emailjs.sendForm('service_7kgcf0c', 'template_kz0rzvv', e.target, 'xV48AsiZpaa2xPDdk')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-          e.target.reset();
-      };
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
+
+        navigate('/catalog');
+    };
 
     return (
         <section className="contact">
