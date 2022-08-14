@@ -13,7 +13,7 @@ export const Catalog = () => {
             <div className="row">
                <div className="col-md-6">
                   <div className="titlepage">
-                     <h2>Our Product</h2>
+                     <h2>Our Products</h2>
                   </div>
                </div>
             </div>
